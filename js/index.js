@@ -50,7 +50,7 @@ Array.from(images).forEach((image) => {
 
 
 // 8
-document.addEventListener('keydown', (event) => {
+document.addEventListener("keydown", (event) => {
     if (event.key == "9"){
         document.body.style.backgroundColor = "black";
     }
@@ -58,7 +58,9 @@ document.addEventListener('keydown', (event) => {
 
 
 // 9
-d
+document.addEventListener("blur", (event) => {
+    event.target.style.backgroundColor = "blue";
+});
 
 
 const navLink = document.querySelectorAll(".nav")
