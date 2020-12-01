@@ -1,16 +1,7 @@
 // Your code goes here
-
-
-
-
-
-
-
 // 1
 const body = document.querySelector("body")
 body.addEventListener("click", event => event.target.style.backgroundColor = "green")
-
-
 
 
 
@@ -41,14 +32,14 @@ intro.addEventListener("mousemove", () => {
     intro.style.fontSize = "80px"
 })
 
+
 const images = document.querySelectorAll("img");
 // 6
 Array.from(images).forEach((image) => {
     image.style.cursor = "zoom-in";
     image.addEventListener("mouseenter", () => {
         image.style.transform = "scale(1.2)";       
-    });
- 
+    }); 
 
 
 // 7
@@ -58,14 +49,16 @@ Array.from(images).forEach((image) => {
 });
 
 
+// 8
+document.addEventListener('keydown', (event) => {
+    if (event.key == "9"){
+        document.body.style.backgroundColor = "black";
+    }
+})
 
 
+// 9
 
-
-const div = document.querySelector(".div")
-div.addEventListener("click", (event) => {
-    div.style.backgroundColor = "black"
-}) 
 
 
 const navLink = document.querySelectorAll(".nav")
